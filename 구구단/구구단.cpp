@@ -139,7 +139,7 @@ void success() {
 void fail() {
     printf("\n--->    NOPE오답입니다!");
 }
-}*/
+}
 
 int main(void) {
     srand((unsigned int)time(NULL));
@@ -170,7 +170,7 @@ int main(void) {
                     bottle[randBottle] = 1;
                     if (randBottle == treatment)
                     {
-                        isincluded = 1;
+                        isincluded = 1;     //발모제를 골랐을때
                     }
                 }
                 else
@@ -181,7 +181,7 @@ int main(void) {
             for (int k = 0; k < 4; k++)
             {
                 if (bottle[k] == 1)
-                    printf(" %d ", k + 1);
+                    printf(" %d ", k + 1);      // 몇번째 도전인지 기록
             }
             printf(" 물약을 머머리에 바릅니다.\n\n");
 
@@ -210,4 +210,26 @@ int main(void) {
         }
     }
     return 0;
+}*/
+
+/*int main(void) {
+    int num;
+    int i, j, k;
+    printf("입력 : ");
+    scanf_s("%d", &num);
+    for (i=1; i <= num; i++) {
+        for (j = i-1; j < num - 1; j++) {
+            printf(" ");
+        }
+        for (k = 2; k < i*2+1; k++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;    
+}*/
+
+int main(void) {
+
 }
+
